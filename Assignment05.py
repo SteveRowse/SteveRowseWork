@@ -21,19 +21,22 @@ MENU: str = '''
 '''
 # Define the Data Constants
 FILE_NAME: str = "Enrollments.json"
+RED = '\033[31m'                # sets color to red
+RESET = '\033[0m'               # Resets the color to default
+
 # When the program starts, read the .json
 import json
-import sys
-# Define the Data Variables and constants
-student_first_name: str = ''  # Holds the first name of a student entered by the user.
-student_last_name: str = ''  # Holds the last name of a student entered by the user.
-course_name: str = ''  # Holds the name of a course entered by the user.
-file = None  # Holds a reference to an opened file.
-menu_choice: str  # Hold the choice made by the user.
-student_data: dict = {}
-students: list = []
-RED = '\033[31m'  # sets color to red
-RESET = '\033[0m' # Resets the color to default
+import sys                      # needed for color change
+
+# Define the Data Variables
+student_first_name: str = ''    # Holds the first name of a student entered by the user.
+student_last_name: str = ''     # Holds the last name of a student entered by the user.
+course_name: str = ''           # Holds the name of a course entered by the user.
+file = None                     # Holds a reference to an opened file.
+menu_choice: str                # Hold the choice made by the user.
+student_data: dict = {}         # Hold the dictionary
+students: list = []             # Hold the list
+
 
 
 # Extract the data from the file with error handling
@@ -48,7 +51,7 @@ except FileNotFoundError as e:      # creates an error if there is not .json fil
     sys.exit(1)
 except Exception as e:
     print("There was a non-specific error!\n")
-    print("-- Technical Error Message -- ")
+    print(RED +"-- Technical Error Message -- "+ RESET)
     print(e, e.__doc__, type(e), sep='\n')
 
 finally: # Check if a file object exists and is still open
@@ -88,7 +91,7 @@ while (True):
             print(e.__str__())
         except Exception as e:
             print("There was a non-specific error!\n")
-            print("-- Technical Error Message -- ")
+            print(RED + "-- Technical Error Message -- " + RESET)
             print(e, e.__doc__, type(e), sep='\n')
         continue
 
@@ -118,9 +121,9 @@ while (True):
         finally:
             if file is not None and file.closed == False:
                 file.close()
-        continue
+        continue # Stop the loop
 
-    # Stop the loop
+
     elif menu_choice == "4":
         break  # out of the loop
     else:

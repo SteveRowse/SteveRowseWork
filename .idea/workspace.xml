@@ -58,7 +58,6 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/steve/Documents/Python/PythonCourse/SteveRowseWork/07_work",
@@ -67,10 +66,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\steve\Documents\Python\PythonCourse\SteveRowseWork\07_work" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773172636429</updated>
       <workItem from="1773172637487" duration="841000" />
-      <workItem from="1773175260562" duration="465000" />
+      <workItem from="1773175260562" duration="2060000" />
     </task>
     <servers />
   </component>
@@ -95,6 +100,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SteveRowseWork$07_test_file.coverage" NAME="07_test_file Coverage Results" MODIFIED="1773173051014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/07_work" />
+    <SUITE FILE_PATH="coverage/SteveRowseWork$07_test_file.coverage" NAME="07_test_file Coverage Results" MODIFIED="1773180002930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/07_work" />
   </component>
 </project>

@@ -1,2 +1,0 @@
-# SteveRowseWork
-Python Stuff
